@@ -3,43 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <title>KTDDD | Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: system-ui, sans-serif;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
       max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-      color: #111;
+      margin: auto;
+      padding: 60px 20px;
     }
-    h1 { font-size: 2.5rem; }
-    h2 { margin-top: 40px; }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-size: 2rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #020617;
+      border: 1px solid #1e293b;
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin: 6px 6px 0 0;
+      font-size: 0.9rem;
+    }
+
     .project {
-      border-left: 4px solid #000;
-      padding-left: 16px;
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
-    a { color: #000; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
   </style>
 </head>
+
 <body>
-  <h1>KTDDD</h1>
-  <p>Developer focused on building clean, functional web projects.</p>
+  <div class="container">
+    <!-- HERO -->
+    <h1>KTDDD</h1>
+    <p>
+      Junior developer focused on building clean, functional web applications.
+    </p>
 
-  <h2>Projects</h2>
+    <!-- ABOUT -->
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I’m a developer learning and building projects using modern web
+        technologies. I enjoy turning ideas into working products and improving
+        my skills through hands-on projects.
+      </p>
+    </div>
 
-  <div class="project">
-    <strong>Project One</strong><br />
-    Short description. Tech used: HTML, CSS, JS.
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git & GitHub</span>
+      <span>APIs</span>
+      <span>React (learning)</span>
+    </div>
+
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
+    <div class="card project">
+      <strong>Project One</strong>
+      <p>
+        Description of your project. What problem it solves, what you learned.
+      </p>
+    </div>
+
+    <div class="card project">
+      <strong>Project Two</strong>
+      <p>
+        Description of another project. Mention tech used.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <h2>Links</h2>
+    <div class="card">
+      <p>
+        GitHub:
+        <a href="https://github.com/KTDDD" target="_blank">
+          github.com/KTDDD
+        </a>
+      </p>
+      <p>Email: your@email.com</p>
+    </div>
+
+    <footer>
+      © 2025 KTDDD
+    </footer>
   </div>
-
-  <div class="project">
-    <strong>Project Two</strong><br />
-    Short description. Tech used: React / API / etc.
-  </div>
-
-  <h2>Links</h2>
-  <p>
-    GitHub: <a href="https://github.com/KTDDD">github.com/KTDDD</a>
-  </p>
 </body>
 </html>
